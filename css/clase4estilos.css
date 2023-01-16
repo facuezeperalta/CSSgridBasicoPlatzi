@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    gap: 40px;
+    display: grid;
+    height: 100vh;
+    background-color: darkgreen;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    place-content: center;
+}
+
+.item{
+    background: lightgreen;
+    display: grid;
+    place-content: end;
+
+}
+
+.item .item-card{
+    height: 80px;
+    width: 40px;
+    background:#62a81e;
+}
+

@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    border: 5px solid lightpink;
+    background-color: antiquewhite;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    place-content: center;
+    justify-items: end;
+    align-items: start;
+    
+}
+
+.item{
+    border: 5px solid lightsteelblue ;
+    font-size: 4rem;
+}
+
+.item-2{
+    justify-self: center;  
+    align-self: center;
+}
