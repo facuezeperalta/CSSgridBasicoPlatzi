@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;500;900&display=swap');
+:root{
+    --black-color:#535E5B;
+    --text-color: #5D5E5E;
+    --button-color: #F2B680;
+    --white-color: #fbfbfb;
+    --background-color-item: #F2D7D0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+main{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: minmax(300px,2fr) 3fr;
+    max-height: 400px;
+    grid-auto-rows: 500px;
+    margin-bottom: 20px;
+}
+
+.info-title{
+    font-size: 4.5rem;
+    color: var(--black-color);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.info-subtitle{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
+.book-button{
+    background-color: var(--button-color) ;
+    color: var(--white-color) ;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.book-button:hover{
+    background-color: var(--black-color);
+}
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info{
+    align-self: center;
+    
+}
+.dishes{
+    margin: 100px 0px;
+}
+
+.dishes-title{
+    color: var(--text-color);
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dishes-grid{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px,250px));
+    grid-auto-rows: 1fr;
+    gap: 25px;
+    justify-content: center;
+}
+
+.dishes-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dishes-item__big{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.menu{
+    margin-bottom: 25px;
+}
+
+.menu-title{
+    font-size: 2.8rem;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.menu-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(100px,150px));
+    gap:25px
+
+}
+
+.menu-grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-grid-item{
+    background-color: var(--background-color-item);
+    border-top-left-radius: 40px;
+    padding: 15px;
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+    }
+    .hero-image{
+        display: none;
+    }
+    .dishes-grid{
+        grid-template-columns: repeat(auto-fit, minmax(75px,150px));
+    }
+} 
+
