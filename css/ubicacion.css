@@ -14,8 +14,7 @@ html{
     display: grid;
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 75px 75px 75px;
-    grid-template-areas: 
-        ;
+    /* grid-template-areas: ; */
     place-content: center;
 }
 
