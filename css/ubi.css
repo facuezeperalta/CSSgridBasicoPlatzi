@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    border:5px solid lightpink;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+
+.item{
+    font-size: 2rem;
+}
+
+.item-1{
+    border:5px solid lightblue;
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item-2{
+    border:5px solid lightgreen;
+    background-color: greenyellow;
+    grid-row: 2 / 4;
+}
+
+.item-3{
+    border:5px solid red;
+    background-color: lightcoral;
+    grid-area: 2/ 2 / 4 / 4 ; /* se usa el area filastart columnastart filaend columnaend */
+}

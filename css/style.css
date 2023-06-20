@@ -16,6 +16,7 @@ html{
     grid-auto-columns: 100px;
     grid-auto-flow: column;
     gap: 20px;
+    height: 600px;
 }
 
 .item{
